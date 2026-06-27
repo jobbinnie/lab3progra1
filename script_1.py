@@ -26,8 +26,8 @@ def leer_y_mostrar_archivo(nombre_archivo, cantidad=10):
       datos = f.read(tamano_registro)
       if not datos:
          break
-    ctypes.memmove(ctypes.byref(registro_aux), datos, tamano_registro)
-    print(f"ID: {registro_aux.id} | Valor (c_byte): {registro_aux.valor}")
+      ctypes.memmove(ctypes.byref(registro_aux), datos, tamano_registro)
+      print(f"ID: {registro_aux.id} | Valor (c_byte): {registro_aux.valor}")
 
 
 if __name__ == "__main__":
