@@ -75,7 +75,7 @@ sc = pygame.display.set_mode(nRes)
 pygame.display.set_caption(f"Graficando ID: {id_filtrar}")
 
 try:
-    Img = Load_Image('Fondo_1.png')
+    Img = Load_Image('base.JPG')
 except SystemExit:
     Img = pygame.Surface(nRes)
     Img.fill((30, 30, 30))
